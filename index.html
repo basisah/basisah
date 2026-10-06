@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Basisah — ML &amp; software engineer</title>
+<meta name="color-scheme" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Great+Vibes&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <a class="mark" href="#top">Basisah</a>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="scrolly" id="top">
+  <div class="anchor" id="work" style="top:180vh"></div>
+  <div class="anchor" id="about" style="top:390vh"></div>
+  <div class="sticky" id="sticky">
+    <div class="about-panel" aria-labelledby="about-title">
+      <div class="about-text">
+        <h2 id="about-title">About</h2>
+        <p class="lede">I'm a final-year computer science student at the University of Saskatchewan, building machine learning systems from the training run to the deployed endpoint.</p>
+        <p>I like the unglamorous half of ML: choosing the metric that matters, cleaning the data, and getting the model somewhere people can call it. Outside class I founded the Undergraduate Bangladeshi Students' Association, served as president of the International Students' Association, and I draw, which is where she came from.</p>
+        <p class="muted">AI/ML specialization with a math minor, graduating in spring 2027. Open to full-time ML and software engineering roles.</p>
+        <h3 id="contact">Contact</h3>
+        <p class="email"><a href="mailto:basisahmusarrat@gmail.com">basisahmusarrat@gmail.com</a></p>
+        <p class="email"><a href="https://www.linkedin.com/in/basisah-musarrat" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+    </div>
+
+    <div class="reveal-wrap" id="revealWrap">
+      <div class="reveal" aria-labelledby="work-title">
+        <div class="reveal-inner">
+          <h2 id="work-title">Selected work</h2>
+          <ul class="langs" aria-label="Languages I work in">
+            <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Java</li><li>Go</li><li>C</li><li>SQL</li><li>SQLite</li><li>HTML/CSS</li>
+          </ul>
+          <ul class="work">
+            <li>
+              <span class="when">ML project</span>
+              <h3><a data-link="ccfrauddetect" href="https://github.com/basisah/CCfraudDetect" target="_blank" rel="noopener">CCfraudDetect</a></h3>
+              <p>Credit card fraud detection with XGBoost, judged on precision-recall (PR-AUC 0.886) because fraud is rare and accuracy hides it. Served from AWS behind an API with monitoring.</p>
+              <p class="stack">XGBoost, S3, Lambda, API Gateway, CloudWatch</p>
+            </li>
+            <li>
+              <span class="when">ML project</span>
+              <h3><a data-link="studentbankassist" href="https://github.com/basisah/StudentBankAssist" target="_blank" rel="noopener">StudentBankAssist</a></h3>
+              <p>A retrieval-augmented chatbot that answers banking questions from retrieved documents, shipped through a GitHub Actions CI/CD pipeline.</p>
+              <p class="stack">FastAPI, ChromaDB, GPT-4o-mini, GitHub Actions</p>
+            </li>
+            <li>
+              <span class="when">Team project, CMPT 370</span>
+              <h3><a data-link="ingrid" href="https://github.com/basisah/InGrid" target="_blank" rel="noopener">InGrid</a></h3>
+              <p>A full-stack rental platform built by a team of four with 45 REST endpoints in an MVC design. I built payment processing and property search, and set up deployment with Docker.</p>
+              <p class="stack">React, Node.js, Express, MySQL, Docker, Jira</p>
+            </li>
+            <li>
+              <span class="when">Personal project</span>
+              <h3><a data-link="netwatch" href="https://github.com/basisah/netwatch" target="_blank" rel="noopener">NetWatch</a></h3>
+              <p>An IT monitoring dashboard that checks services for uptime and response time, opens incident tickets automatically when something goes down, and reports trends in a ServiceNow-style view.</p>
+              <p class="stack">Python, Flask, SQLite</p>
+            </li>
+          </ul>
+          <dl class="creds">
+            <div><dt>USask Space Team (USST)</dt><dd>Data team: I clean and preprocess aerospace payload datasets and build visualizations and trend reports for the engineers.</dd></div>
+            <div><dt>AWS Student Builder Group</dt><dd>Member, building hands-on AWS machine learning projects like CCfraudDetect.</dd></div>
+            <div><dt>Certification</dt><dd>AWS Certified Machine Learning Engineer – Associate</dd></div>
+            <div><dt>Hackathons</dt><dd>2nd place, SIMSA Mining Hackathon 2025 (DeepRoute). 3rd place, EcoHack 2025 (Meewasin Go).</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="edge" aria-hidden="true"></div>
+    </div>
+
+    <div class="curtain" id="curtain">
+      <div class="folds" id="folds"></div>
+      <div class="shade"></div>
+      <div class="spot"></div>
+      <div class="marquee">
+        <h1>Basisah</h1>
+        <span class="spark one"></span><span class="spark two"></span>
+      </div>
+      <p class="tagline">A portfolio where machine learning projects play out like scenes on a stage.</p>
+      <div class="edge"></div>
+    </div>
+
+    <canvas id="scene" tabindex="0" aria-label="3D character. Drag or use the arrow keys to turn her around. Click her, or press W or Y, for an emote."></canvas>
+    <div class="fallback"><img src="assets/sketch.jpg" alt="Pencil drawing of Basisah in a cowboy hat, glasses and a suit"></div>
+    <div class="bubble" id="bubble" aria-hidden="true">Yeehaw!</div>
+    <p class="hint" id="hint">Drag to turn her. Click her for an emote. Scroll to see my work.</p>
+  </div>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
